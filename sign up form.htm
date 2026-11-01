@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <style>
+
+    </style>
+  
+  
+  
+  
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="/action_page.php">
+
+    <div>
+ 
+    <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+
+  </div>
+ 
+  <div>
+
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br>
+  
+  </div>
+
+  
+
+  <div>
+
+  <label for="email">Enter your Email: </label><br>
+  <input type="email" id="email" name="email"><br>
+  
+ </div>
+ 
+ 
+ <div>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br>
+
+</div>
+
+  <input type="submit" value="Submit"><br>
+
+</form>
+
+
+<script>
+
+    function checkForm() {
+
+var user = document.getElementById("user").value;
+
+
+if (user == "") {
+
+document.getElementById("msg-user").textContent = "Please enter your name!";
+
+document.getElementById("msg-user").style.color = "red";
+
+    }
+
+    }
+</script>
+
+</body>
+</html>
